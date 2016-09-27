@@ -14,4 +14,4 @@ $(function(){
 	$('#page5down').click(function(){
 		$('#page1').css('display','block').siblings('.box').css('display','none')
 	})
-})
+});

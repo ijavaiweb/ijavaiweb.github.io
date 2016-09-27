@@ -2,95 +2,220 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
 	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
 	<title>我的简历</title>
 	<link rel="stylesheet" href="css/index.css" />
-	<script type="text/javascript" src="js/jquery-1.12.1.min.js"></script>
-	<script type="text/javascript" src="js/index.js"></script>
-	<style>
-		
-	</style>
+	<!-- <script type="text/javascript" src="js/jquery-1.12.1.min.js"></script>
+-->
+<!-- <script type="text/javascript" src="js/index.js"></script>
+-->
 </head>
 <body>
-<div class="Big">
-	<div class="bigBox">
-		<div class="box" id="page1">
-			<div class="bottom"></div>
-			<div class="left"></div>
-			<div class="right"></div>
-			<div class="bluearc"></div>
-			<div class="grayarc"></div>
-			<div class="logo"></div>
-			<div class="my"></div>
-			<div class="en"></div>
-			<div class="tri1"></div>
-			<div class="tri2"></div>
-			<div class="tri3"></div>
-			<div class="tri4"></div>
-			<div class="tri5"></div>
-			<a class="down" id="page1down" href="#page2"></a>
-		</div>
-		<div class="box" id="page2">
-			<div class="right"></div>
-			<div class="left"></div>
-			<div class="bottom"></div>
-			<div class="my2"></div>
-			<div class="name"></div>
-			<div class="age"></div>
-			<div class="school"></div>
-			<div class="study"></div>
-			<div class="time"></div>
-			<div class="tri1"></div>
-			<div class="tri2"></div>
-			<div class="tri3"></div>
-			<div class="tri4"></div>
-			<a class="down" id="page2down" href="#page3"></a>
-		</div>
-		<div class="box" id="page3">
-			<div class="my3"></div>
-			<div class="ps"></div>
-			<div class="fw"></div>
-			<div class="sb"></div>
-			<div class="dw"></div>
-			<div class="ws"></div>
-			<div class="hb"></div>
-			<div class="js"></div>
-			<div class="jq"></div>
-			<div class="h5"></div>
-			<div class="c3"></div>
-			<div class="bottom"></div>
-
-			<a class="down" id="page3down" href="#page4"></a>
-		</div>
-		<div class="box" id="page4">
-			<div class="his"></div>
-			<div class="text1"></div>
-			<div class="left"></div>
-			<div class="right"></div>
-			<div class="lineA"></div>
-			<div class="lineB"></div>
-			<div class="lineC"></div>
-			<div class="lineD"></div>
-			<div class="lineE"></div>
-			<div class="lineF"></div>
-			<div class="tri1"></div>
-			<div class="tri2"></div>
-			<div class="tri3"></div>
-			<div class="tri4"></div>
-			<div class="tri5"></div>
-			<a class="down" id="page4down" href="#page5"></a>
-		</div>
-		<div class="box" id="page5">
-			<div class="text"></div>
-			<div class="my5"></div>
-			<div class="lineA"></div>
-			<div class="lineB"></div>
-			<div class="lineC"></div>
-			<div class="lineD"></div>
-			<div class="topleft"></div>
-			<div class="bottomright"></div>
-			<a class="down" id="page5down" href="#page1"></a>
-		</div>
-	</div>
-	</div>
+<div class="bigBox" id="fullpage">
+<!-- 第一屏 start-->
+<section class="first section panel num1 current" data-section-name="num1" id="page1">
+	<div class="bottom"></div>
+	<div class="left"></div>
+	<div class="right"></div>
+	<div class="bluearc"></div>
+	<div class="grayarc"></div>
+	<div class="logo"></div>
+	<div class="my"></div>
+	<div class="en"></div>
+	<div class="tri1"></div>
+	<div class="tri2"></div>
+	<div class="tri3"></div>
+	<div class="tri4"></div>
+	<div class="tri5"></div>
+	<a class="down" id="page1down" href="#page2"></a>
+</section>
+<!-- 第一屏end -->
+<!-- 第二屏start -->
+<section class="section panel num2 second" data-section-name="num2" id="page2">
+	<div class="right"></div>
+	<div class="left"></div>
+	<div class="bottom"></div>
+	<div class="my2"></div>
+	<div class="name"></div>
+	<div class="age"></div>
+	<div class="school"></div>
+	<div class="study"></div>
+	<div class="time"></div>
+	<div class="tri1"></div>
+	<div class="tri2"></div>
+	<div class="tri3"></div>
+	<div class="tri4"></div>
+	<a class="down" id="page2down" href="#page3"></a>
+</section>
+<!-- 第二屏end -->
+<!-- 第三屏start -->
+<section class="section three panel num3" data-section-name="num3" id="page3">
+	<div class="my3"></div>
+	<div class="ps"></div>
+	<div class="fw"></div>
+	<div class="sb"></div>
+	<div class="dw"></div>
+	<div class="ws"></div>
+	<div class="hb"></div>
+	<div class="js"></div>
+	<div class="jq"></div>
+	<div class="h5"></div>
+	<div class="c3"></div>
+	<div class="bottom"></div>
+	<a class="down" id="page3down" href="#page4"></a>
+</section>
+<!-- 第三屏end -->
+<!-- 第四屏start -->
+<section class="section four panel num4" data-section-name="num4" id="page4">
+	<div class="his"></div>
+	<div class="text1"></div>
+	<div class="left"></div>
+	<div class="right"></div>
+	<div class="lineA"></div>
+	<div class="lineB"></div>
+	<div class="lineC"></div>
+	<div class="lineD"></div>
+	<div class="lineE"></div>
+	<div class="lineF"></div>
+	<div class="tri1"></div>
+	<div class="tri2"></div>
+	<div class="tri3"></div>
+	<div class="tri4"></div>
+	<div class="tri5"></div>
+	<a class="down" id="page4down" href="#page5"></a>
+</section>
+<!-- 第四屏end-->
+<!-- 第五屏start-->
+<section class="section five panel num5" data-section-name="num5" id="page5" style="background: rgb(98, 154, 210);">
+	<div class="text"></div>
+	<div class="my5"></div>
+	<div class="lineA"></div>
+	<div class="lineB"></div>
+	<div class="lineC"></div>
+	<div class="lineD"></div>
+	<div class="topleft"></div>
+	<div class="bottomright"></div>
+	<a class="down" id="page5down" href="#page1"></a>
+</section>
+<!-- 第五屏end-->
+</div>
 </body>
-</html>
+<!-- <script type="text/javascript" src="js/jquery-1.12.1.min.js"></script>
+-->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script src="js/jquery.fullPage.min.js"></script>
+<!-- <script type="text/javascript" src="js/jquery.easing.min.js"></script>
+<script type="text/javascript" src="js/jquery.scrollify.min.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+-->
+<script type="text/javascript">
+
+$('#fullpage').fullpage({
+        'verticalCentered': false,
+        'css3': true,
+		onLeave: function (anchorLink, index) {
+				// console.log(anchorLink)
+				$('.section').removeClass('current');
+				console.log(index)
+				// 延时100毫秒执行
+				setTimeout(function () {
+					$('.section').eq(index - 1).addClass('current');
+				}, 100);
+			}
+		});
+
+	// window.onload = function () {
+
+	// 	$(function() {
+
+	// 	$(".panel").css({"height":$(window).height()});
+	// 	var timer;
+
+	// 	$(window).resize(function() {
+	// 		clearTimeout(timer);
+	// 		timer = setTimeout(function() {
+	// 			$(".panel").css({"height":$(window).height()});
+	// 			console.log()
+	// 		},40);
+	// 	});
+
+	// 	$.scrollify({
+	// 		section:".panel"
+	// 	});
+
+
+	// 	$(".scroll").click(function(e) {
+	// 		e.preventDefault();
+	// 		$.scrollify("move",$(this).attr("href"));
+	// 	});
+	// });
+
+	// 		function addEvent(obj,xEvent,fn) {
+	// 		    if(obj.attachEvent){
+	// 		      obj.attachEvent('on'+xEvent,fn);
+	// 		    }else{
+	// 		      obj.addEventListener(xEvent,fn,false);
+	// 		    }
+	// 		}
+
+	// 	  //接着利用我们自己封装的函数给div绑定事件，
+	// 		 // var oDiv = document.getElementById('div1');
+	// 		 var oDiv = window;
+	// 		 addEvent(oDiv,'mousewheel',onMouseWheel);
+	// 		 addEvent(oDiv,'DOMMouseScroll',onMouseWheel);
+	// 	  // 当滚轮事件发生时，执行onMouseWheel这个函数
+
+	// 	  	var num=1;
+	// 	  	var ev = ev || window.event;
+
+	// 		function onMouseWheel() {
+
+	// 		    var ev = ev || window.event;
+	//             var down = true; // 定义一个标志，当滚轮向下滚时，执行一些操作
+	//                down = ev.wheelDelta?ev.wheelDelta<0:ev.detail>0;
+
+	//             if(down){
+	//                num=num+1;
+	//                if(num>5){
+	//                	num=5
+	//                };
+	//             }else{
+	//                num=num-1;
+	//                if(num<1){
+	//                	num=1
+	//                };
+	//             }
+
+	//             // alert(num);
+	//             switch(num){
+	//             	case 1:
+	//             		$('#page2').removeClass('box2');
+	//             		$('#page1').addClass('box1');
+	//             		break;
+	//             	case 2:
+	//             		$('#page1').removeClass('box1');
+	//             		$('#page3').removeClass('box3');
+	//             		$('#page2').addClass('box2');
+	//             		break;
+	//             	case 3:
+	//             		$('#page2').removeClass('box2');
+	//             		$('#page4').removeClass('box4');
+	//             		$('#page3').addClass('box3');
+	//             		break;
+	//             	case 4:
+	//             		$('#page3').removeClass('box3');
+	//             		$('#page5').removeClass('box5');
+	//             		$('#page4').addClass('box4');
+	//             		break;
+	//             	case 5:
+	//             		$('#page4').removeClass('box4');
+	//             		$('#page5').addClass('box5');
+	//             		
+	//             		break;
+	//             	default:
+	//             		break;
+	//             }
+
+	// 		}
+	// 	}
+	</script></html>

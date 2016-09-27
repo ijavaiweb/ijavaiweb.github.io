@@ -6,37 +6,34 @@
 html{
 	width: 100%;
 	height: 100%;
-	overflow: hidden;
-	overflow-y: scroll;
+	/* overflow: hidden; */
+	/* overflow-y: scroll; */
 }
 body{
 	width: 100%;
 	height: 100%;
-	background-color: #ccc;
-	overflow: hidden;
-	overflow-y: scroll;
-}
-.Big{
-	width: 35%;
-	height: 100%;
-	overflow: hidden;
-	/* overflow-y: scroll; */
-	margin: 0 auto;
-}
-.bigBox{
-	width: 100%;
-	height: 500%;
-	background-color:#fafafa;
+	background-color: #e0e0e0;
 	/* overflow: hidden; */
 	/* overflow-y: scroll; */
 }
-.box{
+
+.bigBox{
+	width: 100%;
+	height: 100%;
+	background-color:#fafafa;
+	margin: 0 auto;
+	/* overflow: hidden; */
+	/* overflow-y: scroll; */
+}
+section{
 	width: 100%;
 	height: 100%;
 	position: relative;
 	overflow: hidden;
+	background: #fff;
 }
-.down{
+/* // 第一屏 */
+#page1down {
 	display: block;
 	width: 15%;
 	height: 15%;
@@ -48,7 +45,7 @@ body{
 	opacity: 0;
 	transform: rotateZ(180deg);
 	animation: down 1s infinite linear ;
-	animation-fill-mode: forwards;
+	/* animation-fill-mode: forwards; */
 }
 @-webkit-keyframes down{
 	0%{ opacity:1;  bottom: 15%;}
@@ -89,6 +86,9 @@ body{
 	position: absolute;
 	bottom: 0%;
 	left:0%;
+	/* animation: page1bottom 1s linear forwards; */
+}
+.first.current .bottom{
 	animation: page1bottom 1s linear forwards;
 }
 @-webkit-keyframes page1bottom{
@@ -115,6 +115,8 @@ body{
 	position: absolute;
 	bottom: 34%;
 	left: -2%;
+}
+.first.current .left{
 	animation: left 1s linear;
 	animation-fill-mode: forwards;
 }
@@ -126,6 +128,8 @@ body{
 	position: absolute;
 	top: 0%;
 	right: -4%;
+}
+.first.current .right{
 	opacity: 0;
 	animation: right 1s linear 0.5s;
 	animation-fill-mode: forwards;
@@ -139,6 +143,8 @@ body{
 	top: 1%;
 	left: 17%;
 	transform: rotateZ(-5deg);
+}
+.first.current .bluearc{
 	opacity:0;
 	animation: page1bluearc 2s linear 1.5s;
 	animation-fill-mode: forwards;
@@ -179,6 +185,8 @@ body{
 	position: absolute;
 	top: 9%;
 	left: 17%;
+}
+.first.current .grayarc{
 	opacity:0;
 	animation: page1grayarc 2s linear 0.5s;
 	animation-fill-mode: forwards;
@@ -219,6 +227,8 @@ body{
 	position: absolute;
 	top: 8%;
 	left: 20%;
+}
+.first.current .logo{
 	opacity: 0;
 	animation: page1logo 1s linear 1s;
 	animation-fill-mode: forwards;
@@ -247,6 +257,8 @@ body{
 	position: absolute;
 	top: 18%;
 	left: 25%;
+}
+.first.current .my{
 	opacity: 0;
 	animation: page1my 1s linear 0.5s;
 	animation-fill-mode: forwards;
@@ -287,6 +299,8 @@ body{
 	position: absolute;
 	top: 30%;
 	left: 25%;
+}
+.first.current .en{
 	opacity: 0;
 	animation: page1en 1s linear 1s;
 	animation-fill-mode: forwards;
@@ -315,6 +329,8 @@ body{
 	position: absolute;
 	top: 3%;
 	left: 8%;
+}
+.first.current .tri1{
 	opacity: 0;
 	transform: rotateZ(115deg);
 	animation: page1tri1 0.5s linear 1.5s;
@@ -344,6 +360,8 @@ body{
 	position: absolute;
 	top: 12%;
 	right: 8%;
+}
+.first.current .tri2{
 	opacity: 0;
 	transform: rotateZ(-5deg);
 	animation: page1tri2 0.5s linear 1.5s;
@@ -374,6 +392,8 @@ body{
 	top: 32%;
 	right: 8%;
 	transform: rotateZ(-5deg);
+}
+.first.current .tri3{
 	opacity: 0;
 	animation: page1tri3 0.5s linear 1.5s;
 	animation-fill-mode: forwards;
@@ -403,6 +423,8 @@ body{
 	top: 50%;
 	left: 15%;
 	transform: rotateZ(165deg);
+}
+.first.current .tri4{
 	opacity: 0;
 	animation: page1tri4 0.5s linear 1.5s;
 	animation-fill-mode: forwards;
@@ -432,6 +454,8 @@ body{
 	top: 50%;
 	right: 15%;
 	transform: rotateZ(55deg);
+}
+.first.current .tri5{
 	opacity: 0;
 	animation: page1tri5 0.5s linear 1.5s;
 	animation-fill-mode: forwards;
@@ -456,8 +480,9 @@ body{
 	background: url(../images/arr.png) 0 0 no-repeat;
 	background-size: 50% 100%;
 }
+// 第二屏开始
 #page2{
-	display: none;
+	background-color: #fff;
 }
 #page2 .right{
 	width: 35%;
@@ -467,6 +492,8 @@ body{
 	position: absolute;
 	top: 0%;
 	right: -6%;
+}
+.second.current .right{
 	opacity: 0;
 	animation: right 1s linear 0.5s;
 	animation-fill-mode: forwards;
@@ -495,6 +522,8 @@ body{
 	position: absolute;
 	bottom: 34%;
 	left: -2%;
+}
+.second.current .left{
 	animation: left 1s linear;
 	animation-fill-mode: forwards;
 }
@@ -522,6 +551,8 @@ body{
 	position: absolute;
 	bottom: 0%;
 	left:0%;
+}
+.second.current .bottom{
 	animation: page2bottom 1s linear;
 	animation-fill-mode: forwards;
 }
@@ -549,6 +580,8 @@ body{
 	position: absolute;
 	top: 10%;
 	left: 25%;
+}
+.second.current .my2{
 	opacity: 0;
 	animation: page2my 1s linear 0.5s;
 	animation-fill-mode: forwards;
@@ -589,6 +622,8 @@ body{
 	position: absolute;
 	top: 25%;
 	left: 10%;
+}
+.second.current .name{
 	opacity: 0;
 	animation: page2name 0.5s linear 2.5s;
 	animation-fill-mode:forwards;
@@ -617,6 +652,8 @@ body{
 	position: absolute;
 	top: 35%;
 	left: 10%;
+}
+.second.current .age{
 	opacity: 0;
 	animation: page2age 0.5s linear 3s;
 	animation-fill-mode:forwards;
@@ -645,6 +682,8 @@ body{
 	position: absolute;
 	top: 45%;
 	left: 10%;
+}
+.second.current .school{
 	opacity: 0;
 	animation: page2school 0.5s linear 3.5s;
 	animation-fill-mode:forwards;
@@ -673,6 +712,8 @@ body{
 	position: absolute;
 	top: 55%;
 	left: 10%;
+}
+.second.current .study{
 	opacity: 0;
 	animation: page2study 0.5s linear 4s;
 	animation-fill-mode:forwards;
@@ -701,6 +742,8 @@ body{
 	position: absolute;
 	top: 65%;
 	left: 10%;
+}
+.second.current .time{
 	opacity: 0;
 	animation: page2time 0.5s linear 4.5s;
 	animation-fill-mode:forwards;
@@ -730,6 +773,8 @@ body{
 	top: 3%;
 	left: 8%;
 	transform: rotateZ(115deg);
+}
+.second.current .tri1{
 	opacity: 0;
 	animation: page2tri1 0.5s linear 5s;
 	animation-fill-mode:forwards;
@@ -759,6 +804,8 @@ body{
 	top: 22%;
 	right: 8%;
 	transform: rotateZ(-5deg);
+}
+.second.current .tri2{
 	opacity: 0;
 	animation: page2tri2 0.5s linear 5s;
 	animation-fill-mode:forwards;
@@ -788,6 +835,8 @@ body{
 	bottom: 27%;
 	right: 8%;
 	transform: rotateZ(35deg);
+}
+.second.current .tri3{
 	opacity: 0;
 	animation: page2tri3 0.5s linear 5s;
 	animation-fill-mode:forwards;
@@ -817,6 +866,8 @@ body{
 	bottom: 15%;
 	left: 15%;
 	transform: rotateZ(165deg);
+}
+.second.current .tri4{
 	opacity: 0;
 	animation: page2tri4 0.5s linear 5s;
 	animation-fill-mode:forwards;
@@ -837,9 +888,9 @@ body{
 	0%{opacity:0; bottom:7% ; transform: rotateZ(35deg);}
 	100%{opacity:1; bottom: 15%; transform: rotateZ(35deg);}
 }
+/* 第三屏 */
 #page3{
 	background-color: #599ad2;
-	display: none;
 }
 #page3 .my3{
 	width: 50%;
@@ -849,6 +900,8 @@ body{
 	position: absolute;
 	top: 10%;
 	left: 25%;
+}
+.three.current .my3{
 	opacity: 0;
 	animation: page3 1s linear;
 	animation-fill-mode: forwards;
@@ -889,6 +942,8 @@ body{
 	position: absolute;
 	top: 25%;
 	left: 15%;
+}
+.three.current .ps{
 	opacity: 0;
 	animation: page3 1s linear;
 	animation-fill-mode: forwards;
@@ -901,6 +956,8 @@ body{
 	position: absolute;
 	top: 25%;
 	left: 55%;
+}
+.three.current .fw{
 	opacity: 0;
 	animation: page3 1s linear;
 	animation-fill-mode: forwards;
@@ -913,6 +970,8 @@ body{
 	position: absolute;
 	top: 35%;
 	left: 15%;
+}
+.three.current .sb{
 	opacity: 0;
 	animation: page3 1s linear;
 	animation-fill-mode: forwards;
@@ -925,6 +984,8 @@ body{
 	position: absolute;
 	top: 35%;
 	left: 55%;
+}
+.three.current .dw{
 	opacity: 0;
 	animation: page3 1s linear;
 	animation-fill-mode: forwards;
@@ -937,6 +998,8 @@ body{
 	position: absolute;
 	top: 45%;
 	left: 15%;
+}
+.three.current .ws{
 	opacity: 0;
 	animation: page3 1s linear;
 	animation-fill-mode: forwards;
@@ -949,6 +1012,8 @@ body{
 	position: absolute;
 	top: 45%;
 	left: 55%;
+}
+.three.current .hb{
 	opacity: 0;
 	animation: page3 1s linear;
 	animation-fill-mode: forwards;
@@ -961,6 +1026,8 @@ body{
 	position: absolute;
 	top: 55%;
 	left: 15%;
+}
+.three.current .js{
 	opacity: 0;
 	animation: page3 1s linear;
 	animation-fill-mode: forwards;
@@ -973,6 +1040,8 @@ body{
 	position: absolute;
 	top: 55%;
 	left: 55%;
+}
+.three.current .jq{
 	opacity: 0;
 	animation: page3 1s linear;
 	animation-fill-mode: forwards;
@@ -985,6 +1054,8 @@ body{
 	position: absolute;
 	top: 65%;
 	left: 15%;
+}
+.three.current .h5{
 	opacity: 0;
 	animation: page3 1s linear;
 	animation-fill-mode: forwards;
@@ -997,6 +1068,8 @@ body{
 	position: absolute;
 	top: 65%;
 	left: 55%;
+}
+.three.current .c3{
 	opacity: 0;
 	animation: page3 1s linear;
 	animation-fill-mode: forwards;
@@ -1010,9 +1083,9 @@ body{
 	bottom: 0%;
 	left:0%;
 }
+// 第四屏
 #page4{
 	background-color: #fff;
-	display: none;
 }
 #page4 .his{
 	width: 7%;
@@ -1022,6 +1095,8 @@ body{
 	position: absolute;
 	top: 15%;
 	left:45%;
+}
+.four.current .his{
 	opacity: 0;
 	animation: page3 1s linear;
 	animation-fill-mode: forwards;
@@ -1062,6 +1137,8 @@ body{
 	position: absolute;
 	top: 25%;
 	left:20%;
+}
+.four.current .text1{
 	opacity: 0;
 	animation: page4text1 1s linear 3.5s;
 	animation-fill-mode: forwards;
@@ -1098,6 +1175,8 @@ body{
 	position: absolute;
 	bottom: 4%;
 	left: -5%;
+}
+.four.current .left{
 	animation: left 1s linear;
 	animation-fill-mode: forwards;
 }
@@ -1109,6 +1188,8 @@ body{
 	position: absolute;
 	top: 0%;
 	right: -4%;
+}
+.four.current .right{
 	opacity: 0;
 	animation: right 1s linear 0.5s;
 	animation-fill-mode: forwards;
@@ -1120,6 +1201,8 @@ body{
 	position: absolute;
 	bottom: 83%;
 	right: 58%;
+}
+.four.current .lineA{
 	opacity: 0;
 	animation: page4lineA 0.5s linear 1s;
 	animation-fill-mode: forwards;
@@ -1147,6 +1230,8 @@ body{
 	position: absolute;
 	top: 16.5%;
 	left: 55%;
+}
+.four.current .lineB{
 	opacity: 0;
 	animation: page4lineB 0.5s linear 1s;
 	animation-fill-mode: forwards;
@@ -1174,6 +1259,8 @@ body{
 	position: absolute;
 	top: 16.5%;
 	left: 12%;
+}
+.four.current .lineC{
 	opacity: 0;
 	animation: page4lineC 1s linear 1.5s;
 	animation-fill-mode: forwards;
@@ -1201,6 +1288,8 @@ body{
 	position: absolute;
 	top: 16.5%;
 	right: 12%;
+}
+.four.current .lineD{
 	opacity: 0;
 	animation: page4lineD 1s linear 1.5s;
 	animation-fill-mode: forwards;
@@ -1228,6 +1317,8 @@ body{
 	position: absolute;
 	top: 86%;
 	left: 12%;
+}
+.four.current .lineE{
 	opacity: 0;
 	animation: page4lineE 1s linear 2.5s;
 	animation-fill-mode: forwards;
@@ -1255,6 +1346,8 @@ body{
 	position: absolute;
 	bottom: 13.7%;
 	right: 12%;
+}
+.four.current .lineF{
 	opacity: 0;
 	animation: page4lineF 1s linear 2.5s;
 	animation-fill-mode: forwards;
@@ -1284,6 +1377,8 @@ body{
 	top: 3%;
 	left: 5%;
 	transform: rotateZ(115deg);
+}
+.four.current .tri1{
 	opacity: 0;
 	animation: page4tri1 0.5s linear 4.5s;
 	animation-fill-mode: forwards;
@@ -1313,6 +1408,8 @@ body{
 	top: 12%;
 	right: 8%;
 	transform: rotateZ(-5deg);
+}
+.four.current .tri2{
 	opacity: 0;
 	animation: page4tri2 0.5s linear 4.5s;
 	animation-fill-mode: forwards;
@@ -1342,6 +1439,8 @@ body{
 	bottom: 12%;
 	left: 28%;
 	transform: rotateZ(135deg);
+}
+.four.current .tri3{
 	opacity: 0;
 	animation: page4tri3 0.5s linear 4.5s;
 	animation-fill-mode: forwards;
@@ -1371,6 +1470,8 @@ body{
 	top: 50%;
 	left: 9%;
 	transform: rotateZ(165deg);
+}
+.four.current .tri4{
 	opacity: 0;
 	animation: page4tri4 0.5s linear 4.5s;
 	animation-fill-mode: forwards;
@@ -1401,6 +1502,8 @@ body{
 	right: 15%;
 	transform: rotateZ(55deg);
 	opacity: 0;
+}
+.four.current .tri5{
 	animation: page4tri5 0.5s linear 4.5s;
 	animation-fill-mode: forwards;
 }
@@ -1420,9 +1523,10 @@ body{
 	0%{ opacity:0; bottom:23%;}
 	100%{ opacity:1;bottom:18%;}
 }
-#page5{
-	background-color: #629ad2;
-	display: none;
+// 第五屏
+.five {
+	// // background-color: #629ad2;
+	//     background-color: rgb(98, 154, 210);
 }
 #page5 .my5{
 	width: 40%;
@@ -1432,6 +1536,8 @@ body{
 	position: absolute;
 	top: 15%;
 	left: 30%;
+}
+.five.current .my5{
 	opacity: 0;
 	animation: page5my5 0.5s linear 3s;
 	animation-fill-mode: forwards;
@@ -1460,6 +1566,8 @@ body{
 	position: absolute;
 	top: 25%;
 	left:20%;
+}
+.five.current .text{
 	opacity: 0;
 	animation: page5text 0.5s linear 3.5s;
 	animation-fill-mode: forwards;
@@ -1487,6 +1595,8 @@ body{
 	position: absolute;
 	top: 8%;
 	left: 12%;
+}
+.five.current .lineA{
 	opacity: 0;
 	animation: page5lineA 0.5s linear 1s;
 	animation-fill-mode: forwards;
@@ -1514,6 +1624,8 @@ body{
 	position: absolute;
 	top: 8%;
 	left: 88%;
+}
+.five.current .lineB{
 	opacity: 0;
 	animation: page5lineB 0.5s linear 1.5s;
 	animation-fill-mode: forwards;
@@ -1541,6 +1653,8 @@ body{
 	position: absolute;
 	bottom: 9%;
 	right: 12%;
+}
+.five.current .lineC{
 	opacity: 0;
 	animation: page5lineC 0.5s linear 2s;
 	animation-fill-mode: forwards;
@@ -1568,6 +1682,8 @@ body{
 	position: absolute;
 	bottom: 9%;
 	right: 88%;
+}
+.five.current .lineD{
 	opacity: 0;
 	animation: page5lineD 0.5s linear 2.5s;
 	animation-fill-mode: forwards;
@@ -1588,7 +1704,7 @@ body{
 	0%{opacity: 1; height:1%;}
 	100%{opacity: 1; height:83%;}
 }
-#page5 .topleft{
+.five.current .topleft{
 	width: 10%;
 	height: 5%;
 	background: url(../images/topleft.png) center center no-repeat;
@@ -1597,24 +1713,26 @@ body{
 	top: 5%;
 	left:5%;
 	transform: rotateZ(0deg);
+}
+.five.current .topleft{
 	opacity: 0;
 	animation: page5topleft 0.5s linear;
 	animation-fill-mode: forwards;
 }
 @-webkit-keyframes page5topleft{
-	0%{ opacity:1; left:0%;}
+	0%{ opacity:1; left:-10%;}
 	100%{ opacity:1;left:5%;}
 }
 @-moz-keyframes page5topleft{
-	0%{ opacity:1; left:0%;}
+	0%{ opacity:1; left:-10%;}
 	100%{ opacity:1;left:5%;}
 }
 @-ms-keyframes page5topleft{
-	0%{ opacity:1; left:0%;}
+	0%{ opacity:1; left:-10%;}
 	100%{ opacity:1;left:5%;}
 }
 @-o-keyframes page5topleft{
-	0%{ opacity:1; left:0%;}
+	0%{ opacity:1; left:-10%;}
 	100%{ opacity:1;left:5%;}
 }
 #page5 .bottomright{
@@ -1626,38 +1744,40 @@ body{
 	bottom: 5%;
 	right:5%;
 	transform: rotateZ(180deg);
+}
+.five.current .bottomright{
 	opacity: 0;
 	animation: page5bottomright 0.5s linear;
 	animation-fill-mode: forwards;
 }
 @-webkit-keyframes page5bottomright{
-	0%{ opacity:1; right:0%;}
+	0%{ opacity:1; right:-10%;}
 	100%{ opacity:1;right:5%;}
 }
 @-moz-keyframes page5bottomright{
-	0%{ opacity:1; right:0%;}
+	0%{ opacity:1; right:-10%;}
 	100%{ opacity:1;right:5%;}
 }
 @-ms-keyframes page5bottomright{
-	0%{ opacity:1; right:0%;}
+	0%{ opacity:1; right:-10%;}
 	100%{ opacity:1;right:5%;}
 }
 @-o-keyframes page5bottomright{
-	0%{ opacity:1; right:0%;}
+	0%{ opacity:1; right:-10%;}
 	100%{ opacity:1;right:5%;}
 }
-#page5down{
-	display: block;
-	width: 15%;
-	height: 15%;
-	background: url(../images/down.png) center center no-repeat;
-	background-size: 100% 50%;
-	position: absolute;
-	bottom: 5%;
-	left: 45%;
-	transform: rotateZ(0deg);
-	animation: page5down 1s infinite linear;
-}
+//  .section .down{
+// 	display: block;
+// 	width: 15%;
+// 	height: 15%;
+// 	background: url(../images/down.png) center center no-repeat;
+// 	background-size: 100% 50%;
+// 	position: absolute;
+// 	bottom: 5%;
+// 	left: 45%;
+// 	transform: rotateZ(0deg);
+// 	animation: page5down 1s infinite linear;
+// }
 @-webkit-keyframes page5down{
 	0%{ opacity:1;  bottom: 5%;}
 	25%{ opacity:0.75; bottom: 8%;}
@@ -1671,34 +1791,38 @@ body{
 	50%{ opacity:0.5; bottom: 10%;}
 	75%{ opacity:0.25; bottom: 12%;}
 	100%{ opacity:0; bottom: 15%;}
-}	
+}
 @-ms-keyframes page5down{
 	0%{ opacity:1;  bottom: 5%;}
 	25%{ opacity:0.75; bottom: 8%;}
 	50%{ opacity:0.5; bottom: 10%;}
 	75%{ opacity:0.25; bottom: 12%;}
 	100%{ opacity:0; bottom: 15%;}
-}	
+}
 @-o-keyframes page5down{
 	0%{ opacity:1;  bottom: 5%;}
 	25%{ opacity:0.75; bottom: 8%;}
 	50%{ opacity:0.5; bottom: 10%;}
 	75%{ opacity:0.25; bottom: 12%;}
 	100%{ opacity:0; bottom: 15%;}
-}	
+}
 /* -----------------box1开始---------------- */
 /* -----------------box1结束---------------- */
 /* @media all and (max-device-height:1743px){
 
 } */
-@media all and (max-device-height:900px){
+.bigBox{
+	width: 35%;
+	height: 100%;
+	margin: 0 auto;
+}
+
+@media all and (max-width:900px){
 .bigBox{
 	width: 100%;
 	height: 100%;
 	margin: 0 auto;
 
 }
-
-
 
 }
